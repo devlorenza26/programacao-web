@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2 - Thumbnails e iFrame</title>
+</head>
+<body>
+
+    <h1>Índice de Cidades</h1>
+
+    <!-- Tabela com imagens na horizontal (máximo 200px de largura cada) -->
+    <table border="1">
+        <tr>
+            <td>
+                <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo" target="visor">
+                    <img src="https://picsum.photos/200/150?random=1" width="200" alt="São Paulo">
+                </a>
+            </td>
+            <td>
+                <a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro" target="visor">
+                    <img src="https://picsum.photos/200/150?random=2" width="200" alt="Rio de Janeiro">
+                </a>
+            </td>
+            <td>
+                <a href="https://pt.wikipedia.org/wiki/Salvador" target="visor">
+                    <img src="https://picsum.photos/200/150?random=3" width="200" alt="Salvador">
+                </a>
+            </td>
+            <td>
+                <a href="https://pt.wikipedia.org/wiki/Curitiba" target="visor">
+                    <img src="https://picsum.photos/200/150?random=4" width="200" alt="Curitiba">
+                </a>
+            </td>
+            <td>
+                <a href="https://pt.wikipedia.org/wiki/Bras%C3%ADlia" target="visor">
+                    <img src="https://picsum.photos/200/150?random=5" width="200" alt="Brasília">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- iFrame que exibirá as páginas da Wikipedia -->
+    <iframe name="visor" width="100%" height="500" src="about:blank"></iframe>
+
+</body>
+</html>
