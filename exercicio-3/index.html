@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 3 - Layout Semântico com CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minhas Cinco Cidades</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <h2>Índice</h2>
+            <!-- Tabela com thumbnails dispostos verticalmente -->
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo" target="visor">
+                            <img src="https://picsum.photos/180/100?random=1" width="180" alt="São Paulo">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro" target="visor">
+                            <img src="https://picsum.photos/180/100?random=2" width="180" alt="Rio de Janeiro">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://pt.wikipedia.org/wiki/Salvador" target="visor">
+                            <img src="https://picsum.photos/180/100?random=3" width="180" alt="Salvador">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://pt.wikipedia.org/wiki/Curitiba" target="visor">
+                            <img src="https://picsum.photos/180/100?random=4" width="180" alt="Curitiba">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://pt.wikipedia.org/wiki/Bras%C3%ADlia" target="visor">
+                            <img src="https://picsum.photos/180/100?random=5" width="180" alt="Brasília">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+        <main>
+            <iframe name="visor" src="about:blank"></iframe>
+        </main>
+    </div>
+
+</body>
+</html>
