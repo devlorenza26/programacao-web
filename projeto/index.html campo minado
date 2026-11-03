@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Minado - Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Campo Minado</h1>
+        <p>Projeto de Programação Web</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Jogo</a></li>
+                <li><a href="instrucoes.html">Como Jogar / Instruções</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Configurações do Jogo</h2>
+            <form>
+                <p>
+                    <label for="nome">Nome do Jogador:</label><br>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </p>
+
+                <p>
+                    <label for="linhas">Linhas:</label>
+                    <input type="number" id="linhas" value="5">
+                    
+                    <label for="colunas">Colunas:</label>
+                    <input type="number" id="colunas" value="6">
+                </p>
+
+                <p>
+                    <label for="bombas">Número de Bombas:</label>
+                    <input type="number" id="bombas" value="3">
+                </p>
+
+                <p>
+                    <label for="modo">Modo de Jogo:</label>
+                    <select id="modo">
+                        <option value="classico">Clássico</option>
+                        <option value="rivotril">Rivotril (Com Tempo)</option>
+                        <option value="desafio">Desafio</option>
+                    </select>
+                </p>
+
+                <p>
+                    <button type="button">Iniciar Jogo</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+     <section>
+            <h2>Tabuleiro</h2>
+            <p><strong>Tempo:</strong> <span id="cronometro">00:00</span></p>
+            
+            <p>
+                <button type="button" id="btn-trapaca">Botão Trapaça</button>
+            </p>
+
+            <div id="tabuleiro">
+                <p>O tabuleiro aparece quando for jogo começar.</p>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <h2>Histórico de Partidas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>Grid</th>
+                        <th>Bombas</th>
+                        <th>Modo</th>
+                        <th>Tempo</th>
+                        <th>Resultado</th>
+                        <th>Data/Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7" class="texto-centralizado">Nenhuma partida registrada ainda.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
